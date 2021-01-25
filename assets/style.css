@@ -1,0 +1,28 @@
+::placeholder{
+    color:white
+}
+h1 {
+    background-color: darkcyan;
+}
+/* .middle-col{
+    background-color: darkmagenta; */
+/* } */
+.left-col{
+    background-color: darksalmon;
+}
+.btn{
+
+        content: "";
+    
+        display: inline-block;
+        vertical-align: text-top;
+        background-color: blue;
+        background-position : center center;
+        background-repeat:no-repeat;
+        background-image:url(https://icons.iconarchive.com/icons/paomedia/small-n-flat/16/floppy-icon.png);
+}
+.calendar-entry{
+    background-color:purple;
+    width: 100%;
+    color:white;
+}
