@@ -1,5 +1,15 @@
 $(document).ready(function(){
-    console.log(moment())
+    //moment.js time 
+    const m = moment(); 
+    console.log(m.format("H"));
+
+    // if($("button[data-set]").val() > m.format("H")){
+    //     $(this).siblings('.calendar-entry').addClass("past")
+    // }
+    console.log($("#btn-1").attr("data-hour").val());
+    
+    
+
     $("#clear-btn").click(function(){
         localStorage.clear();
     })
@@ -21,9 +31,8 @@ $(document).ready(function(){
     })
 
     $("#clear-btn").click(function(){
-        alert();
-        // localStorage.clear();
+        localStorage.clear();
     })
 
-
+$("#time").text(m.format("[Today is ]dddd[, ] MMM Mo[, ] YYYY"))
 });

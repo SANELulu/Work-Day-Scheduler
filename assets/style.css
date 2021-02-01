@@ -26,3 +26,9 @@ h1 {
     width: 100%;
     color:white;
 }
+#time{
+    color: black;
+}
+.past{
+    background-color:crimson;
+}
