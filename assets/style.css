@@ -10,7 +10,7 @@ h1 {
 .left-col{
     background-color: darksalmon;
 }
-#btn-9,#btn-10,#btn-11,#btn-12,#btn-1,#btn-2,#btn-3,#btn-4,#btn-5{
+#btn-9,#btn-10,#btn-11,#btn-12,#btn-13,#btn-14,#btn-15,#btn-16,#btn-17{
 
         content: "";
     
@@ -31,4 +31,10 @@ h1 {
 }
 .past{
     background-color:crimson;
+}
+.future{
+    background-color: rgb(32, 151, 32);
+}
+.present{
+    background-color: darkslateblue;
 }

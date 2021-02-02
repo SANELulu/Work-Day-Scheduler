@@ -1,14 +1,20 @@
 $(document).ready(function(){
     //moment.js time 
     const m = moment(); 
-    console.log(m.format("H"));
-
-    // if($("button[data-set]").val() > m.format("H")){
-    //     $(this).siblings('.calendar-entry').addClass("past")
-    // }
-    console.log($("#btn-1").attr("data-hour").val());
+    var time = m.format("H")
     
-    
+    // if time is past then past class will be added with css values 
+   for (let i = 9 ; i < 18 ; i++) {
+        if($("#btn-"+i).attr("data-hour") < time ){
+            $("#btn-"+i).siblings('.calendar-entry').addClass("past")
+        }
+        if($("#btn-"+i).attr("data-hour") > time ){
+            $("#btn-"+i).siblings('.calendar-entry').addClass("future")
+        }
+        if($("#btn-"+i).attr("data-hour") = time ){
+            $("#btn-"+i).siblings('.calendar-entry').addClass("present")
+        }
+   }
 
     $("#clear-btn").click(function(){
         localStorage.clear();
@@ -18,16 +24,17 @@ $(document).ready(function(){
     $("#input-10").val(localStorage.getItem("Calendar10"));
     $("#input-11").val(localStorage.getItem("Calendar11"));
     $("#input-12").val(localStorage.getItem("Calendar12"));
-    $("#input-1").val(localStorage.getItem("Calendar1"));
-    $("#input-2").val(localStorage.getItem("Calendar2"));
-    $("#input-3").val(localStorage.getItem("Calendar3"));
-    $("#input-4").val(localStorage.getItem("Calendar4"));
-    $("#input-5").val(localStorage.getItem("Calendar5"));
+    $("#input-13").val(localStorage.getItem("Calendar13"));
+    $("#input-14").val(localStorage.getItem("Calendar14"));
+    $("#input-15").val(localStorage.getItem("Calendar15"));
+    $("#input-16").val(localStorage.getItem("Calendar16"));
+    $("#input-17").val(localStorage.getItem("Calendar17"));
 
 
     $(".button-entry").click( function(){
         var calendarEntry = $("#input-"+$(this).attr("data-hour")).val();
         localStorage.setItem("Calendar"+$(this).attr("data-hour"), calendarEntry)
+        
     })
 
     $("#clear-btn").click(function(){
