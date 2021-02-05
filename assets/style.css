@@ -4,9 +4,6 @@
 h1 {
     background-color: darkcyan;
 }
-/* .middle-col{
-    background-color: darkmagenta; */
-/* } */
 .left-col{
     background-color: darksalmon;
 }
@@ -36,5 +33,5 @@ h1 {
     background-color: rgb(32, 151, 32);
 }
 .present{
-    background-color: rgb(255, 252, 102);
+    background-color: rgb(131, 131, 131);
 }

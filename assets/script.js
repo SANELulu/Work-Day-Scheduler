@@ -27,8 +27,8 @@ $(document).ready(function(){
     // get localStorage from for loop
     for (let i = 9; i < 17; i++) {
         $("#input-"+i).val(localStorage.getItem("Calendar"+i));
-    
     }
+    // set localStorage from button 
     $(".button-entry").click( function(){
         var calendarEntry = $("#input-"+$(this).attr("data-hour")).val();
         localStorage.setItem("Calendar"+$(this).attr("data-hour"), calendarEntry)
